@@ -91,11 +91,6 @@ public class MainApplication extends Application implements ReactApplication {
                     // packages.add(new MyReactNativePackage());
                     packages.add(new ReactPackage() {
 
-//                        @Override
-//                        public NativeModule getModule(String name, ReactApplicationContext reactContext) {
-//                            return null;
-//                        }
-
                         @NonNull
                         @Override
                         public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
@@ -108,11 +103,6 @@ public class MainApplication extends Application implements ReactApplication {
                             viewManagers.add(new ColoredViewManager(reactContext));
                             return viewManagers;
                         }
-
-//                        @Override
-//                        public ReactModuleInfoProvider getReactModuleInfoProvider() {
-//                            return null;
-//                        }
                     });
                     return packages;
                 }
